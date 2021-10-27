@@ -144,6 +144,7 @@ class JudgeHandler(ZlibPacketHandler):
         super().send(json.dumps(data, separators=(',', ':')))
 
     def on_handshake(self, packet):
+        logger.info('Packet info: %s', packet)
         if 'id' not in packet or 'key' not in packet:
             logger.warning('Malformed handshake: %s', self.client_address)
             self.close()

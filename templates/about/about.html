@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div align="center" style="padding: 20px;">
+        <img src="{{ static('icons/logo.svg') }}" alt="{{ SITE_NAME }}" width="310" height="auto"
+         onerror="this.src=&quot;{{ static('icons/logo.png') }}&quot;; this.onerror=null" style="border: none">
+         <h3 style="color: #1c2237; font-weight: bold;">Bách Khoa Đà Nẵng Online Judge</h3>
+    </div>
+    <h4>
+    <a target="_blank" href="">BKDNOJ (Bách Khoa Đà Nẵng Online Judge)</a>
+là một trang web chấm bài tập lập trình tự động được phát triển dựa trên nền tảng mã nguồn mở <a target="_blank" href="https://dmoj.ca/">DMOJ</a>. Trang web được xây dựng với mục đích cung cấp một nền tảng để tổ chức các cuộc thi lập trình ở nhiều quy mô, và cũng là nơi cho phép các bạn trể luyện tập, mài dũa kỹ thuật lập trình và tư duy thuật toán. Mọi thông tin liên hệ xin vui lòng gửi về:
+    <ul>
+        <li>TS. Phạm Minh Tuấn</a>, khoa Công nghệ Thông tin, trường Đại học Bách Khoa, Đà Nẵng. Email: <a href="mailto:pmtuan@dut.udn.vn">pmtuan@dut.udn.vn</a></li>
+        <li>Đội phát triển BKDN-OJ (vui lòng liên hệ thông qua issue: <a href="https://github.com/BKDN-University/bkdn-oj-docker/issues">tại đây</a>)</li>
+    </ul> 
+    </h4> 
+{% endblock %}
+
